@@ -1,6 +1,6 @@
 # Pentester Academy: JS For Pentesters
 
-> Explanation of All the Payloads Used in Pentester Academy's JS for Pentester Course
+> Explanation of All the Payloads Used in [Pentester Academy's JS for Pentester Course](https://www.pentesteracademy.com/course?id=11)
 
 Hi, In this post you will learn about all the payloads and reasons why chose such payloads.
 
@@ -12,7 +12,7 @@ So before beginning, I would like to tell you that to prevent detection. I have 
 
 ## Tasks
 
-Open the readme file based on tasks
+Open the task specific readme file on the [github repo](https://github.com/tbhaxor/pt-jsfp)
 
 ## Contact Me
 
