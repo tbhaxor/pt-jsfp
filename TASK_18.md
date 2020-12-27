@@ -18,7 +18,7 @@ So basically, in this we can do this by parsing the HTML using [DOMParser](https
 
 In this we need the text between `<p id="address">...</p>`. After googling, I found this "[Selecting Text Between HTML Tags](https://stackoverflow.com/a/7167486/10362396)"
 
-**REGEX USED: `<p id="address">(.+?)<\/p>`**
+**REGEX USED: `/<p id="address">(.+?)<\/p>/`**
 
 ```js
 const xhttp = new XMLHttpRequest();
